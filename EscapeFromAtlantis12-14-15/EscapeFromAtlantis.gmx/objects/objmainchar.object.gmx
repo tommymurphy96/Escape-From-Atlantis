@@ -55,6 +55,12 @@ jumpspeed = 9;
             <kind>1</kind>
             <string>
 
+if keyboard_check_pressed(vk_shift)
+   {
+   instance_create(x,y,objsmoke);
+   }
+   
+
 ///Get Players Input
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
@@ -65,6 +71,9 @@ image_speed = 0;
 move = key_left + key_right;
 hsp = move * global.playermovespeed;
 if (vsp &lt; 10) vsp += global.playergravity;
+
+
+
 
 
 if (y &lt; 650) { 
@@ -174,8 +183,19 @@ image_xscale=-1;
 //}
 
 
+x = ((x mod room_width) + room_width) mod room_width
+
+//if (x &gt; room_width)
+//{ x = -sprite_width; }
+
+//if (x &lt; -sprite_width)
+//{ x = room_width; }
+
+
+
 if (y &gt; room_height) { 
 
+    instance_create(x,y, objsmoke);
     global.dead = 1;
    
  
