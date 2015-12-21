@@ -80,6 +80,8 @@ global.playergravity = 0.2;
             <string>/// Platform code
 
 
+
+
 if keyboard_check_pressed(vk_numpad1)
    {
    global.globalvsp = global.globalvsp + 1;

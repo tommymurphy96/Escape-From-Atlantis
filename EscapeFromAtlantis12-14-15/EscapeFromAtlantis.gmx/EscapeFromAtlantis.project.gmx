@@ -29,12 +29,16 @@
       <sprite>sprites\sprgametitle</sprite>
       <sprite>sprites\sprtitleright</sprite>
       <sprite>sprites\sprtitleleft</sprite>
+      <sprite>sprites\creditfont</sprite>
     </sprites>
     <sprites name="Characters">
       <sprite>sprites\sprmainchar</sprite>
       <sprite>sprites\sprPlayerJump</sprite>
       <sprite>sprites\sprite8</sprite>
       <sprite>sprites\sprmainchardie</sprite>
+      <sprite>sprites\sprite20</sprite>
+      <sprite>sprites\sprsmoke</sprite>
+      <sprite>sprites\sprite24</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprite>sprites\sprplatform</sprite>
@@ -52,11 +56,14 @@
       <sprite>sprites\sprpolebottom</sprite>
       <sprite>sprites\sprBrickBottom</sprite>
       <sprite>sprites\sprbrokenpolebottom</sprite>
+      <sprite>sprites\sprwatertest1</sprite>
+      <sprite>sprites\sprwatertest2</sprite>
+      <sprite>sprites\sprwatertest3</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bkgrndMain</background>
-    <background>background\background1</background>
+    <background>background\bkgrndcredits</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -70,15 +77,11 @@
     <object>objects\objplatform</object>
     <object>objects\objSmallPlatform</object>
     <object>objects\objtinybrown</object>
-    <object>objects\objBrickBottom</object>
-    <object>objects\objbottompole</object>
-    <object>objects\objbrokenpolebottom</object>
     <object>objects\objbrownfull</object>
     <object>objects\objplatformfull</object>
     <object>objects\objgameover</object>
     <object>objects\objscore</object>
     <object>objects\objdeadplayer</object>
-    <object>objects\objec</object>
     <object>objects\objbluefull</object>
     <object>objects\objgamestart</object>
     <object>objects\objgametitle</object>
@@ -86,16 +89,27 @@
     <object>objects\objbrickbluesmall</object>
     <object>objects\objgreysmall</object>
     <object>objects\objgreyfull</object>
+    <object>objects\objsmoke</object>
     <objects name="titlescreen">
       <object>objects\objtitleleft</object>
+      <object>objects\creditfont1</object>
       <object>objects\objtitleright</object>
     </objects>
+    <objects name="Ruins">
+      <object>objects\objbrokenpolebottom</object>
+      <object>objects\objBrickBottom</object>
+      <object>objects\objbottompole</object>
+      <object>objects\objwater1</object>
+      <object>objects\objwater2</object>
+      <object>objects\objwater3</object>
+    </objects>
+    <object>objects\objwatercontroller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RmMain</room>
     <room>rooms\testroom1</room>
-    <room>rooms\RmCredits</room>
     <room>rooms\Rmtitlescreen</room>
+    <room>rooms\rmcredits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
