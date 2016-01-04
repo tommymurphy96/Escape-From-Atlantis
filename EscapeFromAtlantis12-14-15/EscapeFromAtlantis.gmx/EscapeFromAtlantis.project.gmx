@@ -23,13 +23,21 @@
     </datafile>
   </datafiles>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\death_2</sound>
+    <sound>sound\death_1</sound>
+    <sound>sound\main_menu</sound>
+    <sound>sound\game_fast</sound>
+    <sound>sound\game_mid</sound>
+    <sound>sound\game_slow</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="splash/title/credit screen">
       <sprite>sprites\sprgametitle</sprite>
       <sprite>sprites\sprtitleright</sprite>
       <sprite>sprites\sprtitleleft</sprite>
       <sprite>sprites\creditfont</sprite>
+      <sprite>sprites\sprWave</sprite>
     </sprites>
     <sprites name="Characters">
       <sprite>sprites\sprmainchar</sprite>
@@ -64,6 +72,7 @@
   <backgrounds name="background">
     <background>background\bkgrndMain</background>
     <background>background\bkgrndcredits</background>
+    <background>background\bkgsplash</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -104,11 +113,16 @@
       <object>objects\objwater3</object>
     </objects>
     <object>objects\objwatercontroller</object>
+    <objects name="title screen">
+      <object>objects\objChar</object>
+      <object>objects\objWave</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmSplash</room>
+    <room>rooms\Rmtitlescreen</room>
     <room>rooms\RmMain</room>
     <room>rooms\testroom1</room>
-    <room>rooms\Rmtitlescreen</room>
     <room>rooms\rmcredits</room>
   </rooms>
   <help>
